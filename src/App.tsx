@@ -13,11 +13,12 @@ import MuiNavbar from './components/MuiNavbar';
 // import MuiButton from './components/MuiButton';
 // import MuiTypography from './components/MuiTypography';
 // import MuiTextField from './components/MuiTextField';
-
+import MuiLink from "./components/MuiLink"
 function App() {
   return (
     <div className="App">
       <MuiNavbar />
+      <MuiLink />
     </div>
   );
 }
