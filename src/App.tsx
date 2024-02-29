@@ -1,6 +1,6 @@
 import './App.css';
 // import MuiAutocomplete from './components/MuiAutocomplete';
-import MuiBox from './components/MuiBox';
+import MuiLayout from './components/MuiLayout';
 // import MuiRating from './components/MuiRating';
 // import MuiSwitch from './components/MuiSwitch';
 // import MuiCheckBox from './components/MuiCheckBox';
@@ -13,7 +13,7 @@ import MuiBox from './components/MuiBox';
 function App() {
   return (
     <div className="App">
-      <MuiBox />
+      <MuiLayout />
     </div>
   );
 }
