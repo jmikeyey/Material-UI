@@ -47,7 +47,7 @@ const MuiNavbar = () => {
                         color="inherit" 
                         id="resouces-button" 
                         onClick={handleClick}
-                        aria-controle={
+                        aria-controls={
                             open ? 'resources-menu' : undefined
                         }
                         aria-haspopup='true'
