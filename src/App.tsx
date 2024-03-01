@@ -21,18 +21,19 @@ import MuiDrawer from "./components/MuiDrawer";
 // import MuiAvatar from './components/MuiAvatar';
 import MuiBadge from "./components/MuiBadge";
 import MuiList from "./components/MuiList";
-import MuiChip from "./components/MuiChip";
+// import MuiChip from "./components/MuiChip";
 // import MuiAlert from "./components/MuiAlert";
-import MuiSnackbar from "./components/MuiSnackbar";
-import MuiDialog from "./components/MuiDialog";
+// import MuiSnackbar from "./components/MuiSnackbar";
+// import MuiDialog from "./components/MuiDialog";
 // import MuiProgress from "./components/MuiProgress";
-import MuiSkeleton from "./components/MuiSkeleton";
-import MuiLoadingButton from "./components/LabPackage/MuiLoadingButton";
+// import MuiSkeleton from "./components/MuiSkeleton";
+// import MuiLoadingButton from "./components/LabPackage/MuiLoadingButton";
 // import MuiTooltip from './components/MuiTooltip';
 // import MuiTable from './components/MuiTable';
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import MuiPicker from "./components/LabPackage/MuiPicker";
+import MuiTabs from "./components/LabPackage/MuiTabs";
 
 function App() {
     return (
@@ -44,6 +45,7 @@ function App() {
                 <MuiBadge />
                 <MuiList />
                 <MuiPicker />
+                <MuiTabs />
             </div>
         </LocalizationProvider>
     );
