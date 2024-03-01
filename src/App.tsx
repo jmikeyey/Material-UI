@@ -25,26 +25,27 @@ import MuiChip from "./components/MuiChip";
 // import MuiAlert from "./components/MuiAlert";
 import MuiSnackbar from "./components/MuiSnackbar";
 import MuiDialog from "./components/MuiDialog";
-import MuiProgress from "./components/MuiProgress";
+// import MuiProgress from "./components/MuiProgress";
 import MuiSkeleton from "./components/MuiSkeleton";
 import MuiLoadingButton from "./components/LabPackage/MuiLoadingButton";
 // import MuiTooltip from './components/MuiTooltip';
 // import MuiTable from './components/MuiTable';
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import MuiPicker from "./components/LabPackage/MuiPicker";
 
 function App() {
     return (
-        <div className="App">
-            <MuiNavbar />
-            <MuiBreadcrumbs />
-            <MuiDrawer />
-            <MuiBadge />
-            <MuiList />
-            <MuiChip />
-            <MuiSnackbar />
-            <MuiDialog />
-            <MuiSkeleton />
-            <MuiLoadingButton />
-        </div>
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <div className="App">
+                <MuiNavbar />
+                <MuiBreadcrumbs />
+                <MuiDrawer />
+                <MuiBadge />
+                <MuiList />
+                <MuiPicker />
+            </div>
+        </LocalizationProvider>
     );
 }
 
