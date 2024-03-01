@@ -2,6 +2,7 @@ import { Stack, Avatar, AvatarGroup } from "@mui/material";
 import React from "react";
 
 const MuiAvatar = () => {
+    
     return (
         <Stack spacing={4}>
             <Stack direction="row" spacing={1}>
