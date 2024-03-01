@@ -18,7 +18,7 @@ import ExpandMore from '@mui/icons-material/ExpandMore';
 import StarBorder from '@mui/icons-material/StarBorder';
 const MuiList = () => {
 
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
 
     const handleClick = () => {
       setOpen(!open);
@@ -54,14 +54,6 @@ const MuiList = () => {
                             </ListItemAvatar>
                         </ListItemIcon>
                         <ListItemText primary="List item 1"/>
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton>
-                    <ListItemIcon>
-                        <InboxIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="Inbox" />
                     </ListItemButton>
                 </ListItem>
                 <Divider />
