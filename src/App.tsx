@@ -34,6 +34,7 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import MuiPicker from "./components/LabPackage/MuiPicker";
 import MuiTabs from "./components/LabPackage/MuiTabs";
+import MuiTimeline from "./components/LabPackage/MuiTimeline";
 
 function App() {
     return (
@@ -45,7 +46,7 @@ function App() {
                 <MuiBadge />
                 <MuiList />
                 <MuiPicker />
-                <MuiTabs />
+                <MuiTimeline />
             </div>
         </LocalizationProvider>
     );
