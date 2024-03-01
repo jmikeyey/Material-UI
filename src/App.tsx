@@ -32,10 +32,11 @@ import MuiList from "./components/MuiList";
 // import MuiTable from './components/MuiTable';
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-import MuiPicker from "./components/LabPackage/MuiPicker";
-import MuiTabs from "./components/LabPackage/MuiTabs";
-import MuiTimeline from "./components/LabPackage/MuiTimeline";
-import MuiMasonry from "./components/LabPackage/MuiMasonry";
+// import MuiPicker from "./components/LabPackage/MuiPicker";
+// import MuiTabs from "./components/LabPackage/MuiTabs";
+// import MuiTimeline from "./components/LabPackage/MuiTimeline";
+// import MuiMasonry from "./components/LabPackage/MuiMasonry";
+import MuiResponsiveness from "./components/MuiResponsiveness";
 
 function App() {
     return (
@@ -46,7 +47,7 @@ function App() {
                 <MuiDrawer />
                 <MuiBadge />
                 <MuiList />
-                <MuiMasonry />
+                <MuiResponsiveness />
             </div>
         </LocalizationProvider>
     );
