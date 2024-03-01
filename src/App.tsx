@@ -1,5 +1,5 @@
-import './App.css';
-import MuiNavbar from './components/MuiNavbar';
+import "./App.css";
+import MuiNavbar from "./components/MuiNavbar";
 // import MuiImageList from './components/MuiImageList';
 // import MuiAccordion from './components/MuiAccordion';
 // import MuiCard from './components/MuiCard';
@@ -14,30 +14,31 @@ import MuiNavbar from './components/MuiNavbar';
 // import MuiTypography from './components/MuiTypography';
 // import MuiTextField from './components/MuiTextField';
 // import MuiLink from "./components/MuiLink"
-import MuiBreadcrumbs from './components/MuiBreadcrumbs';
-import MuiDrawer from './components/MuiDrawer';
+import MuiBreadcrumbs from "./components/MuiBreadcrumbs";
+import MuiDrawer from "./components/MuiDrawer";
 // import MuiSpeedDial from './components/MuiSpeedDial';
 // import MuiBottomNavigation from './components/MuiBottomNavigation';
 // import MuiAvatar from './components/MuiAvatar';
-import MuiBadge from './components/MuiBadge';
-import MuiList from './components/MuiList';
-import MuiChip from './components/MuiChip';
-import MuiAlert from './components/MuiAlert';
+import MuiBadge from "./components/MuiBadge";
+import MuiList from "./components/MuiList";
+import MuiChip from "./components/MuiChip";
+import MuiAlert from "./components/MuiAlert";
+import MuiSnackbar from "./components/MuiSnackbar";
 // import MuiTooltip from './components/MuiTooltip';
 // import MuiTable from './components/MuiTable';
 
 function App() {
-  return (
-    <div className="App">
-      <MuiNavbar />
-      <MuiBreadcrumbs />
-      <MuiDrawer />
-      <MuiBadge />
-      <MuiList />
-      <MuiChip />
-      <MuiAlert />
-    </div>
-  );
+    return (
+        <div className="App">
+            <MuiNavbar />
+            <MuiBreadcrumbs />
+            <MuiDrawer />
+            <MuiBadge />
+            <MuiList />
+            <MuiChip />
+            <MuiSnackbar />
+        </div>
+    );
 }
 
 export default App;
