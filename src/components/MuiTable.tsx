@@ -11,7 +11,7 @@ import React from "react";
 
 const MuiTable = () => {
     return (
-        <TableContainer component={Paper} sx={{maxHeight: '300px'}}>
+        <TableContainer component={Paper} sx={{ maxHeight: '300px' }}>
             <Table aria-label="table" stickyHeader>
                 <TableHead>
                     <TableRow>

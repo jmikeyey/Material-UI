@@ -16,13 +16,13 @@ import MuiNavbar from './components/MuiNavbar';
 // import MuiLink from "./components/MuiLink"
 import MuiBreadcrumbs from './components/MuiBreadcrumbs';
 import MuiDrawer from './components/MuiDrawer';
-import MuiSpeedDial from './components/MuiSpeedDial';
-import MuiBottomNavigation from './components/MuiBottomNavigation';
+// import MuiSpeedDial from './components/MuiSpeedDial';
+// import MuiBottomNavigation from './components/MuiBottomNavigation';
 // import MuiAvatar from './components/MuiAvatar';
 import MuiBadge from './components/MuiBadge';
 import MuiList from './components/MuiList';
 import MuiChip from './components/MuiChip';
-import MuiTooltip from './components/MuiTooltip';
+// import MuiTooltip from './components/MuiTooltip';
 import MuiTable from './components/MuiTable';
 
 function App() {
