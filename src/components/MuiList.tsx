@@ -9,13 +9,43 @@ import {
     ListItemButton,
     ListItemIcon,
     ListItemText,
+    Collapse 
 } from "@mui/material";
-import React from "react";
+import React, {useState} from "react";
 import InboxIcon from '@mui/icons-material/Inbox';
+import ExpandLess from '@mui/icons-material/ExpandLess';
+import ExpandMore from '@mui/icons-material/ExpandMore';
+import StarBorder from '@mui/icons-material/StarBorder';
 const MuiList = () => {
+
+    const [open, setOpen] = useState(true);
+
+    const handleClick = () => {
+      setOpen(!open);
+    };
+
     return (
         <Box sx={{ width: "360px", bgcolor: "#efefef" }}>
-            <List>
+            <List dense={true}>
+            <ListItemButton onClick={handleClick}>
+                <ListItemIcon>
+                <InboxIcon />
+                </ListItemIcon>
+                <ListItemText primary="Inbox" />
+                {open ? <ExpandLess /> : <ExpandMore />}
+            </ListItemButton>
+
+            <Collapse in={open} timeout="auto" unmountOnExit>
+                <List component="div" disablePadding>
+                <ListItemButton sx={{ pl: 4 }}>
+                    <ListItemIcon>
+                    <StarBorder />
+                    </ListItemIcon>
+                    <ListItemText primary="Starred" />
+                </ListItemButton>
+                </List>
+            </Collapse>
+
                 <ListItem disablePadding>
                     <ListItemButton>
                         <ListItemIcon>
@@ -26,7 +56,6 @@ const MuiList = () => {
                         <ListItemText primary="List item 1"/>
                     </ListItemButton>
                 </ListItem>
-                <Divider />
                 <ListItem disablePadding>
                     <ListItemButton>
                     <ListItemIcon>
