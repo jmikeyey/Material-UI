@@ -15,12 +15,14 @@ import MuiNavbar from './components/MuiNavbar';
 // import MuiTextField from './components/MuiTextField';
 // import MuiLink from "./components/MuiLink"
 import MuiBreadcrumbs from './components/MuiBreadcrumbs';
+import MuiDrawer from './components/MuiDrawer';
 
 function App() {
   return (
     <div className="App">
       <MuiNavbar />
       <MuiBreadcrumbs />
+      <MuiDrawer />
     </div>
   );
 }
