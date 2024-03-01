@@ -37,19 +37,37 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 // import MuiTimeline from "./components/LabPackage/MuiTimeline";
 // import MuiMasonry from "./components/LabPackage/MuiMasonry";
 import MuiResponsiveness from "./components/MuiResponsiveness";
+import { ThemeProvider, colors, createTheme } from "@mui/material";
+
+const theme = createTheme({
+    status: {
+        danger: "#e53e3e",
+    },
+    palette: {
+        secondary: {
+            main: colors.orange[500],
+        },
+        neutral: {
+            main: colors.grey[500],
+            darker: colors.grey[700]
+        },
+    },
+});
 
 function App() {
     return (
-        <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <div className="App">
-                <MuiNavbar />
-                <MuiBreadcrumbs />
-                <MuiDrawer />
-                <MuiBadge />
-                <MuiList />
-                <MuiResponsiveness />
-            </div>
-        </LocalizationProvider>
+        <ThemeProvider theme={theme}>
+            <LocalizationProvider dateAdapter={AdapterDayjs}>
+                <div className="App">
+                    <MuiNavbar />
+                    <MuiBreadcrumbs />
+                    <MuiDrawer />
+                    <MuiBadge />
+                    <MuiList />
+                    <MuiResponsiveness />
+                </div>
+            </LocalizationProvider>
+        </ThemeProvider>
     );
 }
 
